@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="mp.css" />
+  </head>
+  <body>
+    <audio loop src="Prettygirl.mp3" id="song"></audio>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQSCaJfLX-LEPmCHcz5fvkcZUrO2_5Z4LeaGe-HiuIYh829Q6YQ" alt="background" id="BG" />
+    <div class="container">
+      <div class="song-name"></div>
+      <div class="song-title">Pretty Girl</div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQSCaJfLX-LEPmCHcz5fvkcZUrO2_5Z4LeaGe-HiuIYh829Q6YQ" alt="thumbnail" id="thumbnail" />
+      <div class="box"></div>
+      <img src="http://www.iconarchive.com/download/i91182/icons8/windows-8/Media-Controls-Play.ico" alt="play/pause" onclick="playPause()" id="pp" />
+      <img src="https://www.shareicon.net/data/512x512/2016/01/05/698429_forward_512x512.png" alt="nextSong" id="ns" onclick="nextSong()" />
+      <img src="https://www.shareicon.net/data/512x512/2016/01/05/698429_forward_512x512.png" alt="previousSong" id="ps" onclick="previousSong()" />
+      <input
+        type="range"
+        id="progressBar"
+        min="0"
+        max=""
+        value="0"
+        onchange='const progressBar = document.querySelector("#progressBar");
+        document.querySelector("#song").currentTime = progressBar.value;'
+      >
+    </div>
+    <script src="mp.js"></script>
+  </body>
+</html>
