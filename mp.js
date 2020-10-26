@@ -7,7 +7,7 @@ const song = document.querySelector("#song");
 var playing = true;
 var songs = ["Prettygirl.mp3", "fakelove.mp3", "Stranger.mp3", "Baby.mp3","backtoyou.mp3","loveme.mp3"],
   songIndex = 0;
-(thumbnails = ["https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQSCaJfLX-LEPmCHcz5fvkcZUrO2_5Z4LeaGe-HiuIYh829Q6YQ", "https://upload.wikimedia.org/wikipedia/en/3/38/When_We_All_Fall_Asleep%2C_Where_Do_We_Go%3F.png", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSo1RQ_vSELHhtffeMwTehFeUa9d7N_lwHeoZeovIN77uF9p67e", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTob-tfpJQI1_J2pTsGaRh0tQT3oOUBsSdCrGbh790J1Was-koe","https://m.media-amazon.com/images/I/915Rma--XpL._SS500_.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQykc1WORFyzaAuvEcqWc6EsCaroo-i_QcmZFML0o4gteurxuQP"]),
+(thumbnails = ["pretty.jpg", "fakelove.jpg", "stranger.jpg", "baby.jpg","backtoyou.jpg","loveme.jpg"]),
   (songNames = [
     "Pretty Girl",
     "Fake Love",
